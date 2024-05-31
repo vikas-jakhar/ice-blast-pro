@@ -1,0 +1,65 @@
+@import url(../font/Acumin_Pro_Black.otf);
+@import url(../font/TitlingGothicFB_Cond_Bold.otf);
+@import url(./root.css);
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+/* font-family */
+
+.font-Acumin {
+    font-family: "Acumin Pro", sans-serif;
+}
+
+.font-TitlingGothicFB {
+    font-family: "TitlingGothicFB Cond", sans-serif;
+}
+
+
+/* z-index--opacity */
+
+.z-10 {
+    z-index: 10;
+}
+
+.opacity-70 {
+    opacity: 70%;
+}
+
+/* section */
+
+.bg-img {
+    background-image: url(../image/png/hero-section-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+}
+
+.icon-location {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background-color: var(--color-orange-primary);
+    place-items: center;
+}
+
+/* padding-margin */
+
+.py-14 {
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+
+/* media */
+
+@media (min-width:1200px) {
+    .nav-container {
+        max-width: 1230px !important;
+    }
+}
