@@ -12,19 +12,84 @@
     --fs-6xl: 20px;
     --fs-7xl: 20px;
     --fs-8xl: 20px;
-    --fs-9xl: 20px;
+    --fs-9xl: 45px;
 
     /* line-height */
 
     --lh-base: 24px;
+    --lh-xl: 30px;
+    --lh-9xl: 51px;
 
     /* color */
     --color-white-primary: #FFFFFF;
     --color-black-primary: #000000;
     --color-orange-primary: #FA6A00;
+    --color-orange-secondary: #FA6A0099;
+    --color-gray-primary: #636363;
 }
 
 .text-base {
     font-size: var(--fs-base);
     line-height: var(--lh-base);
+}
+
+.text-xl {
+    font-size: var(--fs-xl);
+    line-height: var(--lh-xl);
+}
+
+.text-9xl {
+    font-size: var(--fs-9xl);
+    line-height: var(--lh-9xl);
+}
+
+@media (min-width:576px) {
+    :root {
+        /* font-size */
+        --fs-9xl: 52px;
+
+        /* line-height */
+        --lh-9xl: 62px;
+    }
+}
+
+@media (min-width:768px) {
+    :root {
+        /* font-size */
+        --fs-9xl: 72px;
+
+        /* line-height */
+        --lh-9xl: 82px;
+    }
+}
+
+@media (min-width:992px) {
+    :root {
+        /* font-size */
+        --fs-xs: 12px;
+        --fs-sm: 14px;
+        --fs-base: 16px;
+        --fs-lg: 18px;
+        --fs-xl: 20px;
+        --fs-2xl: 24px;
+        --fs-3xl: 30px;
+        --fs-4xl: 36px;
+        --fs-5xl: 20px;
+        --fs-6xl: 20px;
+        --fs-7xl: 20px;
+        --fs-8xl: 20px;
+        --fs-9xl: 96px;
+
+        /* line-height */
+
+        --lh-base: 24px;
+        --lh-9xl: 115px;
+
+        /* color */
+        --color-white-primary: #FFFFFF;
+        --color-black-primary: #000000;
+        --color-orange-primary: #FA6A00;
+        --color-orange-secondary: #FA6A0099;
+        --color-gray-primary: #636363;
+    }
 }
