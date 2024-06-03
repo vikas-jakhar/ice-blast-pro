@@ -16,4 +16,12 @@ navheading.forEach((e) => {
     menuicon.classList.remove("avtive-icon");
     menulist.classList.remove("show-heading");
     body.classList.remove("overflow-lg-hidden");
-})
+});
+
+let play = document.querySelectorAll(".play-btn");
+
+play.forEach((e) => {
+    e.addEventListener("click", function () {
+        e.closest(".img-box").lastElementChild.classList.toggle("z-2");
+    });
+});

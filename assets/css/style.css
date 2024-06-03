@@ -1,5 +1,3 @@
-@import url(../font/Acumin_Pro_Black.otf);
-@import url(../font/TitlingGothicFB_Cond_Bold.otf);
 @import url(./root.css);
 
 * {
@@ -12,14 +10,23 @@
 
 /* font-family */
 
+@font-face {
+    font-family: "Acumin Pro";
+    src: url(../font/FontsFree-Net-Acumin-Pro-Book.ttf);
+}
+
+@font-face {
+    font-family: "TitlingGothicFB Cond";
+    src: url(../font/TitlingGothicFB_Cond_Bold.otf);
+}
+
 .font-Acumin {
     font-family: "Acumin Pro", sans-serif;
 }
 
 .font-TitlingGothicFB {
-    font-family: "TitlingGothicFB Cond", sans-serif;
+    font-family: "TitlingGothicFB Cond";
 }
-
 
 /* z-index--opacity */
 
@@ -29,6 +36,10 @@
 
 .opacity-70 {
     opacity: 70%;
+}
+
+.opacity-90 {
+    opacity: 90%;
 }
 
 /* height--width */
@@ -193,6 +204,18 @@
     border-radius: 16px;
 }
 
+.rounded-24 {
+    border-radius: 24px;
+}
+
+.car-cleaing {
+    transition: all 300ms linear;
+}
+
+.img-box:hover .car-cleaing {
+    scale: 1.05;
+}
+
 /* button--icon */
 
 .btn-call {
@@ -201,7 +224,7 @@
     transition: all 300ms linear;
     padding: 16px;
     border-radius: 84px;
-    border: 1px solid transparent;
+    border: none;
 }
 
 .btn-call:hover {
@@ -259,8 +282,40 @@
     padding-right: 34px;
 }
 
-.mt-13{
+.mt-13 {
     margin-top: 13px;
+}
+
+.mt-6 {
+    margin-top: 6px;
+}
+
+.mt-80 {
+    margin-top: 80px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.mt-271 {
+    margin-top: 271px;
+}
+
+.mb-158 {
+    margin-bottom: 158px;
+}
+
+.mt-9 {
+    margin-top: -9px;
 }
 
 /* gap */
@@ -280,11 +335,21 @@
     gap: 12px;
 }
 
+.gap-16 {
+    gap: 16px;
+}
+
 /* media */
 
 @media (max-width:992px) {
     .overflow-lg-hidden {
         overflow: hidden;
+    }
+}
+
+@media (min-width:768px) {
+    .w-md-auto {
+        width: auto !important;
     }
 }
 
@@ -305,6 +370,26 @@
     .bg-img {
         background-size: 100% 100%;
         background-position: unset;
+    }
+
+    .section-1 {
+        background-position: unset;
+    }
+
+    .position-lg-absolute {
+        position: absolute !important;
+    }
+
+    .w-lg-50 {
+        width: 50% !important;
+    }
+
+    .mt-lg-271 {
+        margin-top: 271px;
+    }
+
+    .mb-lg-158 {
+        margin-bottom: 158px;
     }
 }
 
@@ -328,10 +413,18 @@
     }
 
     .w-xl-auto {
-        width: auto;
+        width: auto !important;
     }
 
     .gap-xl-28 {
         gap: 28px;
+    }
+
+    .mt-xl-271 {
+        margin-top: 271px;
+    }
+
+    .top-xl-46 {
+        top: 46% !important;
     }
 }
