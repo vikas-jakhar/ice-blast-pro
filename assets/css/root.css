@@ -6,8 +6,8 @@
     --fs-lg: 18px;
     --fs-xl: 20px;
     --fs-2xl: 24px;
-    --fs-3xl: 30px;
-    --fs-4xl: 36px;
+    --fs-3xl: 20px;
+    --fs-4xl: 30px;
     --fs-5xl: 36px;
     --fs-6xl: 20px;
     --fs-7xl: 20px;
@@ -20,6 +20,8 @@
     --lh-lg: 27px;
     --lh-xl: 30px;
     --lh-2xl: 36px;
+    --lh-3xl: 30.2px;
+    --lh-4xl: 38px;
     --lh-5xl: 44px;
     --lh-9xl: 51px;
 
@@ -30,7 +32,31 @@
     --color-orange-primary: #FA6A00;
     --color-orange-secondary: #FA6A0099;
     --color-gray-primary: #636363;
+    --color-gray-light: #101A2E1A;
     --color-gray-secondary: #E3FAFF0D;
+    --color-skyblue-light: #F5FDFF;
+    --color-accordion2: #F3F3F4;
+    --color-accordion3: #FDF9F2;
+    --color-accordion4: #FFF3EA;
+    --color-gray-light1: #DCDDE0;
+    --color-gray-light2: #E5E3DE;
+    --color-gray-light3: #E7DDD7;
+}
+
+.skyblue {
+    background-color: var(--color-skyblue-light);
+}
+
+.accordion-color2 {
+    background-color: var(--color-accordion2);
+}
+
+.accordion-color3 {
+    background-color: var(--color-accordion3);
+}
+
+.accordion-color4 {
+    background-color: var(--color-accordion4);
 }
 
 .bg-orange-primary {
@@ -59,6 +85,16 @@
 .text-2xl {
     font-size: var(--fs-2xl);
     line-height: var(--lh-2xl);
+}
+
+.text-3xl {
+    font-size: var(--fs-3xl);
+    line-height: var(--lh-3xl);
+}
+
+.text-4xl {
+    font-size: var(--fs-4xl);
+    line-height: var(--lh-4xl);
 }
 
 .text-5xl {
@@ -102,8 +138,8 @@
         --fs-lg: 18px;
         --fs-xl: 20px;
         --fs-2xl: 24px;
-        --fs-3xl: 30px;
-        --fs-4xl: 36px;
+        --fs-3xl: 28px;
+        --fs-4xl: 32px;
         --fs-5xl: 48px;
         --fs-6xl: 20px;
         --fs-7xl: 20px;
@@ -113,6 +149,8 @@
         /* line-height */
 
         --lh-base: 24px;
+        --lh-3xl: 39.2px;
+        --lh-4xl: 45px;
         --lh-5xl: 57px;
         --lh-9xl: 115px;
     }

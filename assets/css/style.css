@@ -52,8 +52,20 @@
     max-width: 730px;
 }
 
+.max-w-551 {
+    max-width: 551px;
+}
+
+.max-w-770 {
+    max-width: 770px;
+}
+
 .max-w-592 {
     max-width: 592px;
+}
+
+.max-w-759 {
+    max-width: 759px;
 }
 
 .max-w-498 {
@@ -113,6 +125,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.Instant-Quote {
+    border: 6px solid #FB842CB2;
+    box-shadow: 0px 0px 26.2px 0px #FA6A00CC;
+    border-radius: 14px;
 }
 
 .icon-location {
@@ -283,11 +301,24 @@
     padding-bottom: 14px;
 }
 
+.py-37 {
+    padding-top: 37px;
+    padding-bottom: 37px;
+}
+
 .mt-87 {
     margin-top: 87px;
 }
 
-.mt-36{
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mr-32 {
+    margin-right: 32px;
+}
+
+.mt-36 {
     margin-top: 36px;
 }
 
@@ -317,8 +348,16 @@
     margin-top: 16px;
 }
 
+.mt-50 {
+    margin-top: 50px;
+}
+
 .pr-34 {
     padding-right: 34px;
+}
+
+.p-32 {
+    padding: 32px;
 }
 
 .mt-13 {
@@ -392,6 +431,52 @@
 
 .top-7 {
     top: -7px;
+}
+
+/* accordion */
+
+.accordion1 {
+    border-radius: 14px;
+    transition: all 300ms linear;
+}
+
+.accordion-border1 {
+    border: 1px solid var(--color-gray-light);
+}
+
+.accordion-border2 {
+    border: 1px solid var(--color-gray-light1);
+}
+
+.accordion-border3 {
+    border: 1px solid var(--color-gray-light2);
+}
+
+.accordion-border4 {
+    border: 1px solid var(--color-gray-light3);
+}
+
+.accordion1:hover {
+    border-color: transparent;
+    box-shadow: 0 0 10px var(--color-gray-primary);
+}
+
+.hide-text,
+.accordion-icon {
+    display: none !important;
+}
+
+.active-accordion .hide-text {
+    display: flex !important;
+}
+
+.active-accordion .accordion-icon1,
+.accordion-icon12 {
+    display: none !important;
+}
+
+.active-accordion .accordion-icon12 {
+    display: flex !important;
 }
 
 /* media */
@@ -471,6 +556,22 @@
 
     .mt-lg-42 {
         margin-top: -42px;
+    }
+
+    .max-w-lg-551 {
+        max-width: 551px;
+    }
+
+    .pt-lg-32 {
+        padding-top: 32px !important;
+    }
+
+    .active-accordion .accordion-icon12{
+        display: none !important;
+    }
+
+    .active-accordion .accordion-icon {
+        display: flex !important;
     }
 }
 
