@@ -310,6 +310,10 @@
     margin-top: 87px;
 }
 
+.mt-49 {
+    margin-top: -49px;
+}
+
 .mb-40 {
     margin-bottom: 40px;
 }
@@ -433,11 +437,19 @@
     top: -7px;
 }
 
+.top-135 {
+    top: -135px;
+}
+
 /* accordion */
 
 .accordion1 {
     border-radius: 14px;
     transition: all 300ms linear;
+}
+
+.border-gray {
+    border: 1px solid var(--color-accordion5);
 }
 
 .accordion-border1 {
@@ -462,7 +474,8 @@
 }
 
 .hide-text,
-.accordion-icon {
+.accordion-icon,
+.acc-icon {
     display: none !important;
 }
 
@@ -475,9 +488,77 @@
     display: none !important;
 }
 
-.active-accordion .accordion-icon12 {
+.active-accordion .accordion-icon12,
+.active-accordion .acc-icon {
     display: flex !important;
 }
+
+.active-accordion .heading-white {
+    color: var(--color-white-primary);
+}
+
+.accordion-container .accordion1 {
+    background-color: var(--color-accordion2);
+}
+
+.accordion-container .active-accordion {
+    background-color: var(--color-black-secondary);
+}
+
+/* slick-slider */
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.swiper-full-mobile {
+    position: relative;
+    margin: 50px auto;
+    padding-bottom: 50px;
+}
+
+.swiper-full-mobile:befores {
+    content: "";
+    width: 265px;
+    background: url(http://md-aqil.github.io/images/Pixel-3-XL.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0px;
+    height: 565px;
+    z-index: 2;
+    margin: auto;
+}
+
+.swiper-full-mobile .swiper-slide {
+    height: 100%;
+}
+
+.swiper-full-mobile .swiper-slide img {
+    width: 100%;
+    height: 530px;
+    object-fit: cover;
+
+}
+
+.swiper-slide.swiper-slide-active img {
+    border-radius: 00px;
+
+}
+
+.swiper-slide.swiper-slide-active {
+    border-radius: 16px;
+    width: 509px !important;
+    /* left: -95px; */
+}
+
+
+
 
 /* media */
 
@@ -566,7 +647,7 @@
         padding-top: 32px !important;
     }
 
-    .active-accordion .accordion-icon12{
+    .active-accordion .accordion-icon12 {
         display: none !important;
     }
 
@@ -613,6 +694,11 @@
     .top-xl-22 {
         top: 22% !important;
     }
+
+    .container-1290 {
+        max-width: 1290px !important;
+        margin-left: 0 !important;
+    }
 }
 
 @media (min-width:1400px) {
@@ -622,5 +708,12 @@
 
     .mt-2xl-80 {
         margin-top: -80px;
+    }
+}
+
+@media (min-width:1536px) {
+    .container-1290 {
+        max-width: 1140px !important;
+        margin-left: auto !important;
     }
 }
