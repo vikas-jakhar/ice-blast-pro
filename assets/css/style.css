@@ -56,6 +56,10 @@
     max-width: 551px;
 }
 
+.max-w-966 {
+    max-width: 966px;
+}
+
 .max-w-770 {
     max-width: 770px;
 }
@@ -257,6 +261,10 @@
     border-radius: 16px;
 }
 
+.rounded-14 {
+    border-radius: 14px;
+}
+
 .rounded-24 {
     border-radius: 24px;
 }
@@ -342,6 +350,16 @@
 .py-22 {
     padding-top: 22px;
     padding-bottom: 22px;
+}
+
+.px-30 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.py-16 {
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .mt-24 {
@@ -557,6 +575,15 @@
     /* left: -95px; */
 }
 
+.text-area {
+    border: 1px solid #CFD1D5;
+    background-color: var(--color-white-primary);
+    resize: none;
+    height: 152px;
+    margin-top: 18px;
+    padding: 16px;
+}
+
 
 
 
@@ -698,6 +725,14 @@
     .container-1290 {
         max-width: 1290px !important;
         margin-left: 0 !important;
+    }
+
+    .mb-xl-111 {
+        margin-bottom: -111px;
+    }
+
+    .mt-xl-88 {
+        margin-top: -88px;
     }
 }
 
