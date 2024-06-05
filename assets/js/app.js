@@ -1,4 +1,4 @@
-AOS.init();
+AOS.init({once:true});
 
 let menuicon = document.querySelector(".menu-icon");
 let menulist = document.querySelector(".menu-list");
@@ -13,9 +13,11 @@ menuicon.addEventListener("click", function () {
 let navheading = document.querySelectorAll(".nav-heading");
 
 navheading.forEach((e) => {
-    menuicon.classList.remove("avtive-icon");
-    menulist.classList.remove("show-heading");
-    body.classList.remove("overflow-lg-hidden");
+    e.addEventListener("click", () => {
+        menuicon.classList.remove("active-icon");
+        menulist.classList.remove("show-heading");
+        body.classList.remove("overflow-lg-hidden");
+    })
 });
 
 let play = document.querySelectorAll(".play-btn");
