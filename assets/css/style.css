@@ -571,83 +571,80 @@
 
 /* slick-slider */
 
-.swiper-container {
-    width: 100%;
-    height: 100%;
-
-}
-
-
-.swiper-full-mobile {
-    position: relative;
-    margin: 50px auto;
-    padding-bottom: 50px;
-}
-
-.swiper-full-mobile:befores {
-    content: "";
-    width: 265px;
-    background: url(http://md-aqil.github.io/images/Pixel-3-XL.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0px;
-    height: 565px;
-    z-index: 2;
-    margin: auto;
-}
-
-.swiper-full-mobile .swiper-slide {
-    height: 100%;
-}
-
-.swiper-full-mobile .swiper-slide img {
-    width: 100%;
-    height: 530px;
-    object-fit: cover;
-
-}
-
-.swiper-slide.swiper-slide-active img {
-    border-radius: 00px;
-
-}
-
-.swiper-slide {
-    border-radius: 16px;
-    background-color: black;
+.gallery-slide {
+    display: block;
+    width: 360px;
+    height: auto;
+    padding: 0;
+    border-radius: 12px;
+    overflow: hidden;
     border: 3px solid var(--color-white-primary);
+    background-color: var(--color-black-secondary);
 }
 
 .swiper-slide-active {
-    width: 509px !important;
-    margin-left: -69px;
     border: 3px solid var(--color-yellow-light);
 }
 
-.swiper-slide-next {
-    width: 354px !important;
-    margin-left: -69px;
+.gallery-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 40%;
 }
 
-.swiper-slide-prev {
-    width: 354px !important;
+.gallery-slide.swiper-slide-active {
+    filter: none;
 }
 
-.swiper-full-mobile .swiper-slide img {
-    height: 434px !important;
-    opacity: 50%;
+.swiper-slide-active img {
+    opacity: 100%;
 }
 
 .swiper-slide-prev img,
 .swiper-slide-next img {
-    opacity: 70% !important;
+    opacity: 60%;
 }
 
-.swiper-slide-active img {
-    opacity: 100% !important;
+.swiper-actions {
+    margin-top: 20px;
+}
+
+.swiper-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery-slider .swiper-btn {
+    position: static;
+    height: 22px;
+    margin: 0;
+}
+
+.gallery-slider .swiper-btn:after {
+    font-size: 22px;
+    color: #000;
+}
+
+.gallery-slider .swiper-pagination {
+    position: static;
+    width: fit-content;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.gallery-slider .swiper-pagination-bullet {
+    width: 14px;
+    height: 4px;
+    border-radius: 3px;
+    margin: 0 !important;
+}
+
+.gallery-slider .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #000;
 }
 
 .text-area {

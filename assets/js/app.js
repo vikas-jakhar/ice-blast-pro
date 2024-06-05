@@ -46,54 +46,29 @@ accordionicon.forEach((a) => {
     });
 });
 
-var swiperMobile = new Swiper(".swiper-container.swiper-full-mobile", {
-    slidesPerView: 6,
-    spaceBetween: 0,
-    slideToClickedSlide: true,
-    centeredSlides: true,
+var gallerySlider = new Swiper('.gallery-slider', {
     pagination: {
-        el: ".swiper-pagination",
+        el: '.swiper-pagination',
+        type: 'bullets',
         clickable: true
     },
-    effect: "coverflow",
-    grabCursor: true,
-
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    effect: 'coverflow',
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 2.5,
     coverflowEffect: {
         rotate: 0,
-        stretch: 0,
-        depth: 250,
-        modifier: 1,
-        slideShadows: true
-    },
-
-    loop: true,
-    //   autoplay: {
-    //     delay: 100000,
-    //   },
-
-    keyboard: {
-        enabled: true,
-        onlyInViewport: true
-    },
-
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-    },
-
-    breakpoints: {
-        640: {
-            freemode: true,
-            slidesPerView: 3,
-            spaceBetween: 20
-        },
-        320: {
-            freemode: true,
-            slidesPerView: 3,
-            spaceBetween: 20
-        }
+        stretch: 100,
+        depth: 150,
+        modifier: 1.5,
+        slideShadows: false,
     }
 });
+
 
 let tickbox = document.querySelector(".tick-box");
 
