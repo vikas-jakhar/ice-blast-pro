@@ -17,6 +17,7 @@
     /* line-height */
 
     --lh-base: 24px;
+    --lh-sm: 16px;
     --lh-lg: 27px;
     --lh-xl: 30px;
     --lh-2xl: 30px;
@@ -29,8 +30,11 @@
     --color-white-primary: #FFFFFF;
     --color-black-primary: #000000;
     --color-black-secondary: #101A2E;
+    --color-black-secondary2: #0000001A;
     --color-orange-primary: #FA6A00;
     --color-orange-secondary: #FA6A0099;
+    --color-orange-secondary2: #FB842CB2;
+    --color-orange-secondary3: #FA6A00CC;
     --color-gray-primary: #636363;
     --color-gray-light: #101A2E1A;
     --color-gray-secondary: #E3FAFF0D;
@@ -42,6 +46,11 @@
     --color-gray-light1: #DCDDE0;
     --color-gray-light2: #E5E3DE;
     --color-gray-light3: #E7DDD7;
+    --color-gray-light4: #CFD1D5;
+}
+
+.bg-secondary-black {
+    background-color: var(--color-black-secondary);
 }
 
 .skyblue {
@@ -66,6 +75,11 @@
 
 .text-secondary-black {
     color: var(--color-black-secondary);
+}
+
+.text-sm {
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
 }
 
 .text-base {

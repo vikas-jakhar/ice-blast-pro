@@ -56,6 +56,10 @@
     max-width: 551px;
 }
 
+.max-w-385 {
+    max-width: 385px;
+}
+
 .max-w-966 {
     max-width: 966px;
 }
@@ -107,6 +111,9 @@
 .h-70 {
     height: 70px;
 }
+.h-456{
+    height: 456px;
+}
 
 /* section */
 
@@ -132,8 +139,8 @@
 }
 
 .Instant-Quote {
-    border: 6px solid #FB842CB2;
-    box-shadow: 0px 0px 26.2px 0px #FA6A00CC;
+    border: 6px solid var(--color-orange-secondary2);
+    box-shadow: 0px 0px 26.2px 0px var(--color-orange-secondary3);
     border-radius: 14px;
 }
 
@@ -283,7 +290,7 @@
     box-shadow: 0px 0px 26.2px 0px var(--color-orange-secondary);
     background-color: var(--color-orange-primary);
     transition: all 300ms linear;
-    padding: 16px;
+    padding: 20px;
     border-radius: 84px;
     border: none;
 }
@@ -342,9 +349,23 @@
     margin-top: 40px;
 }
 
+.mt-8 {
+    margin-top: 8px;
+}
+
 .px-50 {
     padding-left: 50px;
     padding-right: 50px;
+}
+
+.px-23 {
+    padding-left: 23px;
+    padding-right: 23px;
+}
+
+.px-20 {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .py-22 {
@@ -366,12 +387,24 @@
     margin-top: 24px;
 }
 
+.mb-44 {
+    margin-bottom: 44px;
+}
+
 .mt-16 {
     margin-top: 16px;
 }
 
 .mt-50 {
     margin-top: 50px;
+}
+
+.pt-38{
+    padding-top: 38px;
+}
+
+.pb-25{
+    padding-bottom: 25px;
 }
 
 .pr-34 {
@@ -451,8 +484,16 @@
     gap: 16px;
 }
 
+.gap-8 {
+    gap: 8px;
+}
+
 .top-7 {
     top: -7px;
+}
+
+.top-4 {
+    top: -4px;
 }
 
 .top-135 {
@@ -576,7 +617,7 @@
 }
 
 .text-area {
-    border: 1px solid #CFD1D5;
+    border: 1px solid var(--color-gray-light4);
     background-color: var(--color-white-primary);
     resize: none;
     height: 152px;
@@ -584,7 +625,42 @@
     padding: 16px;
 }
 
+.card1 {
+    box-shadow: 0px 0px 12px 0px var(--color-black-secondary2);
+    padding: 10px;
+}
 
+.card2 {
+    box-shadow: 0px 2px 34px 0px var(--color-black-secondary2);
+    background: var(--color-black-secondary);
+    border-radius: 42px;
+    padding-top: 68px;
+    max-width: 958px;
+    bottom: -106px;
+    margin-top: 68px;
+}
+
+.form-box {
+    padding: 3px;
+    max-width: 505px;
+    border-radius: 47px;
+}
+
+.icon-tick-2 {
+    border: 0.5px solid var(--color-white-primary);
+    place-items: center;
+    width: 23px;
+    height: 22px;
+    border-radius: 4px;
+}
+
+.icon-tick-2 svg {
+    display: none;
+}
+
+.acitve-tick .icon-tick-2 svg {
+    display: grid;
+}
 
 
 /* media */

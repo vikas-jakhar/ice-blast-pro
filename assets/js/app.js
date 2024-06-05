@@ -92,3 +92,9 @@ var swiperMobile = new Swiper(".swiper-container.swiper-full-mobile", {
         }
     }
 });
+
+let tickbox = document.querySelector(".tick-box");
+
+tickbox.addEventListener("click", function () {
+    tickbox.classList.toggle("acitve-tick");
+})
