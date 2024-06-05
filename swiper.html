@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <style>
+        :root {
+            --dark-green: #9cc675;
+            --dark-yellow: #e89a3d;
+            --extra-light-brown: #fdf0d7;
+            --light-brown: #ecd5ab;
+            --dark-brown: #915b40;
+        }
+
+
+
+        /* body {
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: var(--light-brown)
+        } */
+
+        .overflow-hidden {
+            overflow: hidden;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+
+        }
+
+
+        .swiper-full-mobile {
+            position: relative;
+            margin: 50px auto;
+            padding-bottom: 50px;
+        }
+
+        .swiper-full-mobile:befores {
+            content: "";
+            width: 265px;
+            background: url(http://md-aqil.github.io/images/Pixel-3-XL.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0px;
+            height: 565px;
+            z-index: 2;
+            margin: auto;
+        }
+
+        .swiper-full-mobile .swiper-slide {
+            height: 100%;
+        }
+
+        .swiper-full-mobile .swiper-slide img {
+            width: 100%;
+            height: 530px;
+            object-fit: cover;
+
+        }
+
+        .swiper-slide.swiper-slide-active img {
+            border-radius: 00px;
+
+        }
+
+        .max-w-1140 {
+            max-width: 1140px;
+        }
+
+        .m-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide img {
+            /* width: 509px !important; */
+        }
+
+        .swiper-slide-active {
+            width: 509px !important;
+            margin-left: -50px;
+        }
+
+        .swiper-slide-next {
+            width: 354px !important;
+            margin-left: -50px;
+        }
+
+        .swiper-slide-prev {
+            width: 354px !important;
+        }
+
+        .swiper-full-mobile .swiper-slide img {
+            height: 434px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="max-w-1140 m-auto overflow-hidden">
+        <center>
+            <h1 style="font-size: 36px;">Heading Should be Here</h1>
+            <p style="font-size: 18px;font-weight: 300">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Soluta,
+                dolorum.</p>
+
+        </center>
+        <div
+            class="swiper-container swiper-full-mobile swiper-container-initialized swiper-container-horizontal overflow-hidden">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img src="http://md-aqil.github.io/images/adolescent-beautiful-beauty-247878.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="http://md-aqil.github.io/images/beautiful-beauty-face-2657838.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="http://md-aqil.github.io/images/bikini-body-female-881583.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="http://md-aqil.github.io/images/attractive-beautiful-beauty-1986684.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="http://md-aqil.github.io/images/abstract-expressionism-abstract-painting-acrylic-1690351.jpg"
+                        alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="http://md-aqil.github.io/images/beautiful-bikini-daylight-745767.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="http://md-aqil.github.io/images/adult-beautiful-bikini-1308228.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="http://md-aqil.github.io/images/afro-afro-hair-attractive-2603391.jpg" alt="">
+                </div>
+
+            </div>
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiperMobile = new Swiper('.swiper-container.swiper-full-mobile', {
+            slidesPerView: 4,
+            spaceBetween: 240,
+            loop: true,
+            slideToClickedSlide: true,
+            centeredSlides: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+
+            },
+            effect: "coverflow",
+            grabCursor: true,
+
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 150,
+                modifier: 1.5,
+                slideShadows: true,
+            },
+
+            loop: true,
+            //   autoplay: {
+            //     delay: 100000,
+            //   },
+
+
+            keyboard: {
+                enabled: true,
+                onlyInViewport: true,
+            },
+
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+
+            breakpoints: {
+
+                640: {
+                    freemode: true,
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                320: {
+                    freemode: true,
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                }
+            }
+
+        });
+    </script>
+</body>
+
+</html>

@@ -48,7 +48,7 @@ accordionicon.forEach((a) => {
 
 var swiperMobile = new Swiper(".swiper-container.swiper-full-mobile", {
     slidesPerView: 6,
-    spaceBetween: -15,
+    spaceBetween: 0,
     slideToClickedSlide: true,
     centeredSlides: true,
     pagination: {
@@ -60,8 +60,8 @@ var swiperMobile = new Swiper(".swiper-container.swiper-full-mobile", {
 
     coverflowEffect: {
         rotate: 0,
-        stretch: 10,
-        depth: 100,
+        stretch: 0,
+        depth: 250,
         modifier: 1,
         slideShadows: true
     },
