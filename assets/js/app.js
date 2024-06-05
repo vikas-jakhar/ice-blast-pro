@@ -97,4 +97,31 @@ let tickbox = document.querySelector(".tick-box");
 
 tickbox.addEventListener("click", function () {
     tickbox.classList.toggle("acitve-tick");
+});
+
+let preloader = document.querySelector(".preloader");
+
+body.classList.add("overflow-hidden");
+preloader.classList.add("d-grid");
+
+setTimeout(() => {
+    body.classList.remove("overflow-hidden");
+    preloader.classList.remove("d-grid");
+}, 2000);
+
+let scrolltopbtn = document.querySelector(".scrolltop");
+
+scrolltopbtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+    });
+});
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 500) {
+        scrolltopbtn.classList.add("d-grid");
+    }
+    else {
+        scrolltopbtn.classList.remove("d-grid");
+    }
 })
