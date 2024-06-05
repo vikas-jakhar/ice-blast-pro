@@ -103,7 +103,7 @@ tickbox.addEventListener("click", function () {
 
 let preloader = document.querySelector(".preloader");
 
-// body.classList.add("overflow-hidden");
+body.classList.add("overflow-hidden");
 preloader.classList.add("d-grid");
 
 setTimeout(() => {
