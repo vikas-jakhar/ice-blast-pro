@@ -56,6 +56,10 @@
     max-width: 551px;
 }
 
+.min-vh-70 {
+    min-height: 70vh;
+}
+
 .max-w-385 {
     max-width: 385px;
 }
